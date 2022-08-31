@@ -38,7 +38,7 @@
 /* additional reset */
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 * {
@@ -69,6 +69,7 @@ main {
 
 @media (min-width: 1440px) {
   main {
+    
     margin: auto;
     width: 1110px;
   }
@@ -154,6 +155,7 @@ main {
     width: 445px;
     height: 56px;
     margin-top: 0;
+    margin-bottom: 16px;
   }
 
   .rating:nth-child(2) {
