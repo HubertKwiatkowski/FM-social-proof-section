@@ -138,15 +138,21 @@ main {
 }
 
 .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 78px;
   background-color: var(--clr-neutral-400);  
   border-radius: 8px;
+  margin-top: 16px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 1440px) {
   .rating {
     width: 445px;
     height: 56px;
+    
   }
 
   .rating:nth-child(2) {
@@ -158,10 +164,7 @@ main {
   }
 }
 
-.short-review {
-  margin-top: 16px;
-  margin-bottom: 15px;
-}
+
 
 @media (min-width: 1440px) {
   .short-review {
@@ -175,11 +178,14 @@ main {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 1440px) {
   .stars {
-    margin-left:32px;
+    align-items: center;
+    margin-bottom: 0;
+    /* margin-left:32px; */
   }
 }
 
