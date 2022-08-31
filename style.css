@@ -130,6 +130,7 @@ main {
 @media (min-width: 1440px) {
   .rating {
     width: 445px;
+    height: 56px;
   }
 
   .rating:nth-child(2) {
