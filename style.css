@@ -32,7 +32,7 @@
   --size-450: 1.375rem;
   --size-500: 1.5625rem;
   --size-700: 2rem;
-  --size-900: 3.5rem;
+  --size-900: 3rem;
 }
 
 /* additional reset */
@@ -50,12 +50,53 @@ body {
 /* general styling */
 
 body {
+  position: relative;
   font-size: var(--fs-body);
   font-family: var(--ff-body);
   color: var(--clr-primary-100);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.top-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 232px;
+  width: 374px;
+  background-image: url('images/bg-pattern-top-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 374px 232px;
+  z-index: -1;
+}
+
+@media (min-width: 1440px) {
+  .top-background-image {
+    height: 362px;
+    width: 584px;
+    background-image: url('images/bg-pattern-top-desktop.svg');
+    background-size: 584px 362px;
+  }
+}
+
+.bottom-background-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 503px;
+  width: 375px;
+  background-image: url('images/bg-pattern-bottom-mobile.svg');
+  background-size: 375px 503px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (min-width: 1440px) {
+  .bottom-background-image {
+    background-image: url('images/bg-pattern-bottom-desktop.svg');
+    background-size: 1085px 673px;
+  }
 }
 
 main {
